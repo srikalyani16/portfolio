@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 const Experiences = () => {
   const [selectedItemIndex, setSelectedItemIndex] = useState(0);
-  const { loading, portfolioData } = useSelector((state) => state.root);
+  const { portfolioData } = useSelector((state) => state.root);
   const { experiences } = portfolioData;
   return (
     <div>

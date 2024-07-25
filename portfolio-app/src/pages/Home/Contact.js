@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 
 const Contact = () => {
-  const { loading, portfolioData } = useSelector((state) => state.root);
+  const { portfolioData } = useSelector((state) => state.root);
   const { contact } = portfolioData;
  
   return (

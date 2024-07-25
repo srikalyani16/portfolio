@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const Intro = () => {
-  const { loading, portfolioData } = useSelector((state) => state.root);
+  const { portfolioData } = useSelector((state) => state.root);
   const { intro } = portfolioData;
   const { firstName, lastName, welcomeText, description, caption } = intro;
 

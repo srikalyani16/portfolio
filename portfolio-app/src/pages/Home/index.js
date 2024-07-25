@@ -10,7 +10,7 @@ import Intro from "./intro";
 import { useSelector } from "react-redux";
 
 const Home = () => {
-  const { loading, portfolioData } = useSelector((state) => state.root);
+  const { portfolioData } = useSelector((state) => state.root);
 
   return (
     <div>
