@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines":{
-    "node":"20.9.0",
-    "npm":"10.2.1"
+  "engines": {
+    "node": "20.9.0",
+    "npm": "10.2.1"
   },
   "scripts": {
-    "portfolio-install":"npm install --prefix portfolio-app",
-    "server":"nodemon server.js",
-    "portfolio":"npm start --prefix portfolio-app",
-    "dev":"concurrently \"npm start\" \"npm run portfolio-app\"",
-    "start":"node server.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix portfolio-app && npm run build --prefix portfolio-app"
+    "portfolio-install": "npm install --prefix portfolio-app",
+    "server": "nodemon server.js",
+    "portfolio": "npm start --prefix portfolio-app",
+    "dev": "concurrently \"npm run server\" \"npm run portfolio\"",
+    "start": "node server.js",
+    "build": "npm run portfolio-install && npm run build --prefix portfolio-app"
   },
   "author": "",
   "license": "ISC",
