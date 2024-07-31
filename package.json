@@ -13,7 +13,7 @@
     "portfolio": "npm start --prefix portfolio-app",
     "dev": "concurrently \"npm start\" \"npm run portfolio-app\"",
     "start": "node server.js",
-    "build": "npm run build --prefix portfolio-app"
+    "portfolio-build": "npm run build --prefix portfolio-app"
   },
   "author": "",
   "license": "ISC",
