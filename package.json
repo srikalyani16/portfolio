@@ -11,9 +11,9 @@
     "portfolio-install": "npm install --prefix portfolio-app",
     "server": "nodemon server.js",
     "portfolio": "npm start --prefix portfolio-app",
-    "dev": "concurrently \"npm run server\" \"npm run portfolio\"",
-    "start": "node server.js"
-    
+    "dev": "concurrently \"npm start\" \"npm run portfolio-app\"",
+    "start": "node server.js",
+    "build": "npm run build --prefix portfolio-app"
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +22,8 @@
     "express": "^4.19.2",
     "mongoose": "^8.4.4",
     "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
   }
 }
