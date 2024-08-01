@@ -11,7 +11,15 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/app.js"
+        "dest": "/"
+      },
+         {
+        "src": "/admin",
+        "dest": "/"
+      },
+         {
+        "src": "/admin-login",
+        "dest": "/"
       }
     ]
   }
