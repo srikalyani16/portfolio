@@ -8,12 +8,10 @@
     "npm": "10.2.1"
   },
   "scripts": {
-    "portfolio-install": "npm install --prefix portfolio-app",
     "server": "nodemon server.js",
-    "portfolio": "npm start --prefix portfolio-app",
     "dev": "concurrently \"npm start\" \"npm run portfolio-app\"",
     "start": "node server.js",
-    "portfolio-build": "npm run build --prefix portfolio-app"
+    "build": "npm install --prefix ./portfolio-app && npm run build --prefix ./portfolio-app && npm install"
   },
   "author": "",
   "license": "ISC",
