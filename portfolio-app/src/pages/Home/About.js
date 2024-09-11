@@ -8,7 +8,7 @@ const About = () => {
   const { skills, lottieURL, description1, description2 } = about;
 
   return (
-    <div>
+    <div id="about">
       <SectionTitle title={"About"} />
       <div className="flex sm:flex-col w-full items-center">
         <div className="h-[70vh] w-1/2 sm:w-full">

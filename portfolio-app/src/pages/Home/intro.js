@@ -17,7 +17,7 @@ const Intro = () => {
         {caption || ""}
       </h1>
       <p className="text-white w-2/3 sm:w-full">{description || ""}</p>
-      <button className="border-2 border-tertiary text-tertiary px-10 py-3 rounded">
+      <button className="border-2 border-tertiary text-tertiary px-10 py-3 rounded pointer-events-none">
         Get Started
       </button>
     </div>
