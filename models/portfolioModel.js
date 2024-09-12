@@ -73,8 +73,8 @@ const projectsSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  image: {
-    type: String,
+  tools: {
+    type: Array,
     required: true,
   },
   link: {

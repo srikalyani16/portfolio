@@ -82,11 +82,11 @@ const AdminProjects = () => {
         {projects.map((project) => (
           <div className="shadow border border-gray-400 p-5 flex flex-col">
             <a href={project.link}>
-              <img
+              {/* <img
                 src={project.image}
                 className="h-20 w-40"
                 alt={project.title}
-              />
+              /> */}
             </a>
             <h1>{project.title}</h1>
 
@@ -143,8 +143,8 @@ const AdminProjects = () => {
             <Form.Item name="title" label="Title">
               <input placeholder="Title" />
             </Form.Item>
-            <Form.Item name="image" label="Image">
-              <input placeholder="Image" />
+            <Form.Item name="tools" label="Tools">
+              <input placeholder="Tools" />
             </Form.Item>
             <Form.Item name="description" label="Description">
               <textarea placeholder="Description" />

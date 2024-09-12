@@ -93,3 +93,7 @@ textarea{
   height:100px;
   padding-top:20px;
 }
+li{
+  list-style-type: disc;
+  margin-left:18px;
+}
